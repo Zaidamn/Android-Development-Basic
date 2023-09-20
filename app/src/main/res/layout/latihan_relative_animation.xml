@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nimek"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icon_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/tvProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar1"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:text="Pixel Art 098"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProduk"
+        android:layout_marginStart="20dp"
+        android:text="$ 69.99"
+        android:textColor="#F87676"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        />
+
+    <!--  Star Icon  -->
+    <ImageButton
+        android:id="@+id/ibFav"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvProduk"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/favorite_button"
+        android:backgroundTint="#F87676"
+        />
+
+    <ImageButton
+        android:id="@+id/ibStar1"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FDDA29"
+        />
+
+    <ImageButton
+        android:id="@+id/ibStar2"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginStart="0dp"
+        android:layout_toRightOf="@+id/ibStar1"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FDDA29"
+        />
+
+    <ImageButton
+        android:id="@+id/ibStar3"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginStart="0dp"
+        android:layout_toRightOf="@+id/ibStar2"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FDDA29"
+        />
+
+    <ImageButton
+        android:id="@+id/ibStar4"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginStart="0dp"
+        android:layout_toRightOf="@+id/ibStar3"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FDDA29"
+        />
+
+    <ImageButton
+        android:id="@+id/ibStar5"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginStart="0dp"
+        android:layout_toRightOf="@+id/ibStar4"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FDDA29"
+        />
+
+    <TextView
+        android:id="@+id/tvRatingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrice"
+        android:layout_toRightOf="@id/ibStar5"
+        android:layout_marginStart="6dp"
+        android:text="4.9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        />
+
+    <View
+        android:id="@+id/Line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/ibStar1"
+        android:layout_marginTop="20dp"
+        android:background="#D1CFCF"
+        />
+
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Line"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Brand"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:textColor="#707070"
+        />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBrand"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Type"
+        android:textColor="#707070"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDimen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvType"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Dimensional"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:textColor="#707070"
+        />
+
+    <TextView
+        android:id="@+id/tvBrandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Line"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tvBrand"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Vigority©"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTypeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBrandName"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvType"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Pixel Art"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDimenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTypeName"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvDimen"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=" 3 x 4.1 * 3.9 Inches"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvDimen"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#F87676"
+        android:text="Purchase"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarRelativeActivity">
+
+    <!--  atas kiri  -->
+    <TextView
+        android:id="@+id/kiriAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Atas"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_alignParentStart="true"
+    />
+    <!--  atas kanan  -->
+    <TextView
+        android:id="@+id/kananAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kanan Atas"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_alignParentEnd="true"
+        />
+    <!--  atas tengah  -->
+    <TextView
+        android:id="@+id/tengahAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah Atas"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/kiriTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tengahtengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/kanantengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/kiribawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Bawah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/tengahbawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tengah Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/kananbawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kanan bawah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tengahatastengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AKU MUNCUL DI ATAS TEMGAH"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#2FB0C1"
+        android:layout_above="@+id/tengahtengah"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

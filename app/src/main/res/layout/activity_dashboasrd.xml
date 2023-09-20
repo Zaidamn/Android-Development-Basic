@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboasrdActivity">
+
+     <ImageButton
+         android:id="@+id/ibMenu"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:background="@drawable/baseline_sort_24"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="20dp"
+         />
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/latihan_rectangle"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="50dp"
+
+        android:src="@drawable/nimek"
+        />
+
+    <TextView
+        android:id="@+id/tvSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibMenu"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="128sp"
+
+        android:text="Big Sale"
+        android:textColor="#F87676"
+        android:textSize="26sp"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+    <TextView
+        android:id="@+id/tvDisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSell"
+        android:layout_marginStart="20dp"
+
+        android:text="25%"
+        android:textColor="#FF4141"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+    <TextView
+        android:id="@+id/tvTIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDisc"
+        android:layout_marginStart="20dp"
+
+        android:text="*Limited TIme"
+        android:textColor="#AFA7A7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvTIme"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:background="#F87676"
+        />
+
+    <TextView
+        android:id="@+id/tvPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vLine"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Popular"
+        android:textColor="#F87676"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvArrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vLine"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="New Arrival"
+        android:textColor="#AFA7A7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBranded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vLine"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Popular"
+        android:textColor="#AFA7A7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/ivP1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tvPopular"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+
+        android:background="@drawable/card_image"
+        android:src="@drawable/a_bunny"
+        />
+
+    <ImageView
+        android:id="@+id/ivP2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/ivP1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+
+        android:background="@drawable/card_image"
+        />
+
+    <ImageView
+        android:id="@+id/ivP2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/ivP1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+
+        android:background="@drawable/card_image"
+        android:src="@drawable/pngegg"
+        />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvArrive"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/ivP1"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Pixel Art 031"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Text1.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/ivP1"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Vigority©"
+        android:textColor="#AFA7A7"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text1.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1.2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/ivP1"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="$ 20.99"
+        android:textColor="#F87676"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="106dp"
+        android:layout_toRightOf="@id/ivP2"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Pixel Art 091"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text2.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="146dp"
+        android:layout_toRightOf="@id/ivP2"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Vigority©"
+        android:textColor="#AFA7A7"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text2.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text2.2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/ivP1"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="$ 43.99"
+        android:textColor="#F87676"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

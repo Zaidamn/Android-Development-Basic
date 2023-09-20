@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_screen3"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Ngopi Yuk!"
+        android:textColor="#703108"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPindah"
+            app:icon="@drawable/baseline_keyboard_arrow_right_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="#F57C00"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShare"
+            app:icon="@drawable/baseline_share_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:backgroundTint="#000000"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+        />
+    </LinearLayout>
+</LinearLayout>

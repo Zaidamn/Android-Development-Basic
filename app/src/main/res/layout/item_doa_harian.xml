@@ -1,0 +1,105 @@
+`<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlJudulDoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPictureDoa"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/doa_harian2" />
+
+                <TextView
+                    android:id="@+id/tvJudulDoa"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:maxLines="2"
+                    android:text="Doa Makan"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/ibCollapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/tvJudulDoa"
+                    android:background="@drawable/baseline_keyboard_arrow_right_24"
+                    android:backgroundTint="@color/black"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C1C0C0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rlIsiDoa"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tvDoaArab"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="اَللّٰهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:maxLines="10"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDoaLatin"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoaArab"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="Alloohumma barik lanaa fiimaa razatanaa waqinaa 'adzaa bannar"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"
+                    android:textSize="16sp"
+                    android:maxLines="10"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="BelajarScrollViewActivity">
+
+    <ImageView
+        android:id="@+id/ivorvbg"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:src="@drawable/orv_bg_1_blur"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/ivBookPicture"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/orv2"
+        />
+
+    <TextView
+        android:id="@+id/BookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_toRightOf="@id/ivBookPicture"
+        android:text="Omniscient Reader's Viewpoint"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/alata"
+        />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="싱숑"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/alata"
+        android:layout_toRightOf="@id/ivBookPicture"
+        android:layout_below="@id/BookTitle"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivStars"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_toRightOf="@id/tvAuthor"
+        android:layout_below="@id/BookTitle"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#FFCB30"
+        android:background="@drawable/baseline_star_24"
+        />
+
+    <TextView
+        android:id="@+id/tvstarrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.9"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/alata"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/ivStars"
+        android:layout_below="@id/BookTitle"
+        />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Reviews"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/alata"
+        android:layout_toRightOf="@id/tvstarrate"
+        android:layout_below="@id/BookTitle"
+        android:layout_marginTop="15dp"
+        />
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card1"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ivBookPicture"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="#352929">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/alata"
+            android:text="Fiction"
+            android:textColor="@color/white"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card2"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ivBookPicture"
+        android:layout_toRightOf="@id/Card1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="#352929">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/alata"
+            android:text="Apocalyptic"
+            android:textColor="@color/white"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card3"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ivBookPicture"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/Card2"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#352929">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/alata"
+            android:text="fantasy"
+            android:textColor="@color/white"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvSynop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/Card1"
+        android:layout_marginTop="15dp"
+        android:text="Synopsis"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alata"
+        android:textSize="30sp"
+        />
+
+    <ScrollView
+        android:id="@+id/svDesc"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/tvSynop"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/alata"
+                android:text="@string/orv_synop"
+                android:justificationMode="inter_word"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/svDesc"
+        android:layout_marginTop="10dp"
+        android:text="Review"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alata"
+        android:textSize="30sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvReview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvReview">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Carto1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/ivProfiles"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/kdj"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvCartoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="K.D.J"
+                android:layout_toRightOf="@id/Carto1"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tvCartoDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCartoName"
+                android:layout_toRightOf="@id/Carto1"
+                android:text="3149 Chapter isnt enough"
+                android:layout_marginTop="15dp"
+                android:textSize="16.5sp"
+                android:fontFamily="@font/alata"
+                android:layout_marginStart="10dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Carto2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/Carto1"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/ivProfiles2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/anonym_prof"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvCartoName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zaid_end"
+                android:layout_below="@id/tvCartoDesc"
+                android:layout_toRightOf="@id/Carto2"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCartoName1"
+                android:layout_toRightOf="@id/Carto2"
+                android:text="I aint reading allat"
+                android:layout_marginTop="15dp"
+                android:textSize="16.5sp"
+                android:fontFamily="@font/alata"
+                android:layout_marginStart="10dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Continue Reading"
+        android:backgroundTint="#352929"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/alata"
+        />
+
+
+</RelativeLayout>

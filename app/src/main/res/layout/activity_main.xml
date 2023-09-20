@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--    Heading     -->
+    <TextView
+        android:id="@+id/judulform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Formulir Peminjaman Buku"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+<!--    Heading End     -->
+<!--    Nama Start    -->
+    <TextView
+        android:id="@+id/labelname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/inputname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nama Anggota"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--    Nama End    -->
+<!--    Kelas Start    -->
+    <TextView
+        android:id="@+id/labelkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Kelas"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/inputkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Kelas Anggota"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--    Kelas End   -->
+<!--    Kode Buku Start   -->
+    <TextView
+        android:id="@+id/labelkodebuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Kode Buku"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/inputkodebuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Kode Buku"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="number"
+        />
+<!--    Kode Buku End   -->
+<!--    Button Start    -->
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#689F38"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="submit"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        />
+<!--   Button End   -->
+    <TextView
+        android:id="@+id/showname"
+        android:text=""
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/showkelas"
+        android:text=""
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/showbook"
+        android:text=""
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
